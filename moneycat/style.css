@@ -1,0 +1,978 @@
+html {
+  font-size: 100%;
+}
+
+/* 全体の背景色 */
+body {
+  /* background: linear-gradient(to bottom, #ecbfed, #eeeeff); */
+  color: #363636;
+  /* background-image: url(images/nikukyuu2.gif); */
+}
+
+.wrapper {
+  width: 100%;
+  background-image: url(images/nikukyuu3.gif);
+  background-repeat: repeat;
+}
+
+/* 全体の文字の色 */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ヘッダーのレイアウト */
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #785785;
+  position: sticky;
+  z-index: 999;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #888888;
+  padding-left: 5%;
+  padding-top: 20px;
+}
+
+.phone_nav {
+  display: none;
+}
+
+nav h1 img{
+    height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav a {
+  font-size: 1.1rem;
+}
+
+.main_visual {
+  padding-top: 80px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.main_visual .logo {
+  width: 40%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 100%;
+  /* max-width: 500px; */
+}
+
+.main_content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f6f5f2;
+  z-index: 9999;
+}
+
+.main_content.startscreen {
+  animation: load 2s forwards;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* .main_content p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+} */
+
+.question {
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+  background-color: #ffffffc0;
+}
+
+.section1,
+.section2,
+.section3 {
+  width: 80%;
+  margin: auto;
+}
+
+/* h2 {
+    color: #ff5d85;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 100px;
+} */
+
+h2:not(.swal2-title) {
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h2:not(.swal2-title):before,
+h2:not(.swal2-title):after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+
+h2:not(.swal2-title):before {
+  left: 7px;
+}
+
+h2:not(.swal2-title):after {
+  right: 7px;
+}
+
+/* h2.swal2-title {
+
+} */
+
+.section1 p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.5;
+  padding-top: 100px;
+}
+
+.kekka {
+  margin: 0 auto 50px;
+}
+
+.kekka0 img{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+}
+
+.kekka img{
+  width: 100%;
+  margin: auto;
+}
+
+.section2 h2 {
+  margin-bottom: 20px;
+}
+
+.section2 ul {
+  list-style: none;
+  font-size: 1.3rem;
+  width: 90%;
+  margin: auto;
+}
+
+.kekka p {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.kekka img {
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+}
+
+.section3 p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.5;
+  margin: 100px auto;
+}
+
+.section3 span {
+  background-color: #faf8e6;
+}
+
+.section4 {
+  text-align: center;
+  line-height: 2;
+  width: 40%;
+  padding: 10px;
+  margin: 0 auto 100px;
+  background-color: #f8b1c3;
+  border-radius: 10px;
+}
+
+.section4 p {
+  color: #888888;
+}
+
+.section4 a {
+  display: block;
+  color: #888888;
+}
+
+.section4 .start {
+  font-size: 2rem;
+}
+
+
+.section4:hover {
+  background-color: #ffd9e2;
+  transition: all 0.5s;
+}
+
+.footer {
+  width: 100;
+  background-color: #785785;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  padding: 10px;
+  color: #f8b1c3;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 30px 20px;
+}
+
+/* 2ページ目 */
+.simulate {
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
+  padding-top: 100px;
+  background-color: #ffffffc0;
+}
+
+.simulate_p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.5;
+  margin: 50px auto;
+}
+
+.box_simu_in {
+  width: 100%;
+  /* background-color: #F6F5F2; */
+  display: flex;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.simulate_h {
+  display: flex;
+}
+
+.simulate_h img {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.box_question {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.box_question h2 {
+  padding: 20px 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.box_calc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.box_calc a {
+  color:#785785;
+}
+
+input {
+  width: 150px;
+  height: 3rem;
+  border: solid 3px #a384ae;
+  background-color: #ffffff;
+  margin-right: 20px;
+  text-align: right;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding-right: 5px;
+}
+
+.no_btn {
+  width: 150px;
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: #e6e6fa;
+  text-align: center;
+  margin-right: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.no_btn:hover {
+  background-color: #c1c1ff;
+  color: #fff;
+}
+
+.no_btn_n {
+  width: 150px;
+  margin-right: 50px;
+}
+
+.subtotal {
+  width: 200px;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.border {
+  border-bottom: solid 3px #888888;
+  margin: 20px;
+}
+
+.total {
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.box_simu_out {
+  width: 100%;
+  /* background-color: #888888; */
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.box_calc h3 {
+  width: 150px;
+}
+
+.box_simu_out h4 {
+  width: 100px;
+}
+
+.kekka_btn {
+  background-color: #f8b1c3;
+  border-radius: 10px;
+  width: 200px;
+  margin: 30px auto;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.kekka_btn:hover {
+  background-color: #ffd9e2;
+  transition: all 0.5s;
+}
+
+.sim_kekka {
+  display: none;
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
+  background-color: #ffffffc0;
+  /* background-color: #FFF8E3; */
+}
+
+.sim_kekka h2 {
+  width: 100%;
+  padding: 20px 0;
+  /* background-color: rgb(170, 202, 202); */
+  margin-bottom: 30px;
+}
+
+.sim_kekka.active {
+  display: block;
+}
+
+.kekka_msg {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.kekka_msg span.minus {
+  color: rgb(255, 77, 77);
+}
+
+.kekka_msg span.plus {
+  color: rgb(70, 150, 255);
+}
+
+.kekka_msg2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.box_kekka {
+  width: 100%;
+  /* background-color: #F6F5F2; */
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.comment {
+  width: 30%;
+  text-align: right;
+}
+
+.icon {
+  width: 10%;
+    animation:icon 2s ease-in infinite;
+}
+
+@keyframes icon {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.stepsTrigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.steps {
+  width: 100px;
+  /*1フレーム分の横幅*/
+  height: 100px;
+  /*1フレーム分の縦幅*/
+  background: url(http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/9-3-5/img/steps.png)
+    no-repeat;
+  animation: stepsline 2.5s 0.3s steps(3) forwards;
+}
+
+@keyframes stepsline {
+  0% {
+    background-position: 0 0;
+  }
+
+  70% {
+    background-position: -300px 0;
+    /*アニメーション制作コマ数から1コマ分引いた横幅（今回は1フレーム100pxで制作しているので全体の400px-100px=300px⇒-300px）を指定。*/
+    opacity: 1;
+  }
+
+  100% {
+    background-position: -300px 0;
+    opacity: 1;
+  }
+}
+
+.mainscreen {
+  opacity: 0;
+  animation: mainscreen 0.5s forwards;
+}
+
+@keyframes mainscreen {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 全て共通 */
+.hide-area {
+  display: none;
+}
+
+.modaal-close:after,
+.modaal-close:before {
+  background: #c1c1ff;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #888888;
+}
+
+
+.revision {
+  padding: 20px ;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+  background-color: #fff;
+}
+
+.revision h2 {
+  padding: 10px;
+  color: #656588;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.revision p {
+  padding: 10px;
+}
+
+.main_literacy {
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
+  padding-top: 100px;
+  background-color: #ffffffc0;
+}
+
+.main_literacy h3 {
+    width: 40%;
+    font-size: 1.5rem;
+    margin: 30px auto;
+    text-align: center;
+    border-bottom:solid 2px black;
+}
+
+.revision ul {
+  /* border: solid 2px #fcf8da; */
+  background: #fff;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  list-style-image: url(images/catfoot.png);
+}
+
+.revision ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  font-size: 1.3rem;
+  /* list-style-type: none !important; */
+}
+
+.literacy_img {
+  width: 100%;
+  text-align: center;
+}
+
+.literacy_img img{
+  width: 100%;
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+}
+
+.main_literacy p {
+  padding: 30px 10px;
+  font-size: 1.3rem;
+  line-height: 2.5;
+}
+
+.main_sanko,.main_profile {
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
+  padding-top: 100px;
+  background-color: #ffffffc0;
+}
+
+.main_sanko a,.main_revision a,.literacy a{
+  color: #995caf;
+}
+
+.main_sanko .revision {
+  padding: 0;
+}
+
+.main_profile p {
+  font-size: 1.2rem;
+  line-height: 2.5;
+  padding: 30px;
+  text-align: center;
+}
+
+.main_quiz {
+  width: 80%;
+  margin: auto;
+  min-width: 1000px;
+  padding-top: 100px;
+}
+
+.main_quiz p {
+  padding: 30px 10px;
+  font-size: 1.3rem;
+  line-height: 2.5;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+  width: 60vw;
+  height: 75vh;
+  margin: 35px auto;
+  padding: 50px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+}
+
+.card .choice {
+  margin-top: 50px;
+  /* display: flex;
+    justify-content: space-around; */
+  width: 100%;
+}
+
+.card .choice button {
+  display: block;
+  border: 1px solid #b8b8b8;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(179, 179, 179, 0.3);
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* .card .choice button:hover {
+  background-color: #faf8e6;
+  border: 1px solid #f8b1c3;
+  box-shadow: 0 0 5px rgba(152, 152, 152, 0.3);
+  color: #ff9bb4;
+  transition: all 0.2s ease-in;
+} */
+
+.main_quiz {
+    height: 100vh;
+}
+
+/* ----- スマホ対応 ----- */
+
+@media (max-width:600px) {
+  nav{
+    display: none;
+  }
+
+  .phone_nav {
+    display: block;
+  }
+
+  .phone_nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #785785;
+    position: sticky;
+    z-index: 999;
+  }
+
+  .phone_nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 8px 10px;
+  }
+
+  .phone_nav ul li {
+    padding: 0 20px;
+  }
+
+  .phone_nav ul li img{
+    display: block;
+    width: 8vw;
+    margin: 0.8rem;
+  }
+  
+  .phone_nav ul li img{
+    display: block;
+    width: 8vw;
+    margin: auto;
+  }
+
+  .phone_nav ul li a{
+    font-size: 0.8rem;
+  }
+
+  .question {
+    width: 100%;
+  }
+
+  .main_visual {
+    padding-top: 35px;
+    height: 25vh;
+  }
+
+  .section1 p {
+    font-size: 1.0rem;
+    text-align: center;
+    line-height: 2.0;
+    padding-top: 20px;
+  }
+
+  .section1 p br {
+  display: none;
+  }
+
+  h2 {
+  font-size: 1.2rem;
+  }
+
+  h2:not(.swal2-title) {
+    position: relative;
+    padding: 0.25rem 1rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    width: auto;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .section2 ul {
+    list-style: none;
+    font-size: 1.0rem;
+    width: 100%;
+    margin: auto;
+  }
+
+  .section2 br {
+    display: none;
+  }
+
+  .kekka0 img {
+    width: 80%;
+    box-shadow: 0 0 5px rgba(179, 179, 179, 0.8);
+  }
+
+  .kekka {
+    width: 100%;
+  }
+
+  .section3 p {
+    font-size: 1.0rem;
+    text-align: center;
+    line-height: 2.5;
+    margin: 30px auto;
+  }
+
+  .section3 p br {
+    display: none;
+  }
+
+  .section4 {
+    text-align: center;
+    line-height: 2;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #f8b1c3;
+    border-radius: 10px;
+  }
+
+  /* 2ページ目 */
+  .simulate {
+    width: 80px;
+    margin: auto;
+    min-width: 350px;
+    padding-top: 100px;
+    background-color: #ffffffc0;
+  }
+  .simulate_h {
+    display: block;
+    text-align: center;
+  }
+
+
+  .simulate img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .simulate_h p{
+    font-size: 1.0rem;
+    margin: 0 auto;
+  }
+
+  .simulate_h p br {
+    display: none;
+  }
+
+  .no_btn {
+    width: 100px;
+    font-size: 1.0rem;
+    padding: 5px;
+    background-color: #e6e6fa;
+    text-align: center;
+    margin-right: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .subtotal {
+    width: 150px;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+  .box_simu_out {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .box_simu_out {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .box_simu_out .box_calc {
+    display: block;
+    position: relative;
+  }
+
+  .box_simu_out .box_calc p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .box_question h4 {
+    margin-left: 20px;
+  }
+
+  .box_calc h3 {
+    text-decoration: saddlebrown underline 3px #d298ffc7;
+  }
+
+  .sim_kekka {
+    min-width: 350px;
+  }
+  
+  .kekka_msg,.kekka_msg2 {
+    font-size: 1.2rem;
+  }
+
+  .main_literacy {
+    min-width: 350px;
+  }
+
+  .literacy h3 {
+    font-size: 1.2rem;
+  }
+
+  .literacy p,.literacy li {
+    font-size: 1.0rem;
+  }
+
+  .revision{
+    width: 100%;
+  }
+
+  .revision ul li {
+    font-size: 1.0rem;
+  }
+
+  .main_quiz {
+    width: 100%;
+    min-width: 350px;
+  }
+
+  .card {
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .main_sanko,.main_profile {
+    min-width: 350px;
+  }
+}
+
+@media screen and (min-width:600px) and  (max-width:1000px) {
+  .simulate {
+    min-width: 600px;
+  }
+
+  .sim_kekka {
+    min-width: 600px;
+  }
+
+  .main_literacy {
+    min-width: 600px;
+  }
+
+  .main_quiz {
+    width: 100%;
+    min-width: 600px;
+  }
+
+  .card {
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .main_sanko,.main_profile {
+    min-width: 600px;
+  }
+}
+
+@media (hover: hover) {
+  .card .choice button:hover {
+    background-color: #faf8e6;
+    border: 1px solid #f8b1c3;
+    box-shadow: 0 0 5px rgba(152, 152, 152, 0.3);
+    color: #ff9bb4;
+    transition: all 0.2s ease-in;
+  } 
+}
+
+  
+
+
+
+
+
+
