@@ -816,7 +816,7 @@ input {
 
   /* 2ページ目 */
   .simulate {
-    width: 80px;
+    width: 80%;
     margin: auto;
     min-width: 350px;
     padding-top: 100px;
@@ -929,6 +929,12 @@ input {
   .main_sanko,.main_profile {
     min-width: 350px;
   }
+
+  .syunyuutosisyutupng img {
+    width: 90%;
+    max-width: 1000px;
+  }
+  
 }
 
 @media screen and (min-width:600px) and  (max-width:1000px) {
