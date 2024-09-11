@@ -226,7 +226,8 @@ h2:not(.swal2-title):after {
 }
 
 .section3 span {
-  background-color: #faf8e6;
+  background-color: #ecde60;
+  font-weight: bold;
 }
 
 .section4 {
@@ -487,28 +488,19 @@ input {
 }
 
 .steps {
-  width: 100px;
-  /*1フレーム分の横幅*/
-  height: 100px;
-  /*1フレーム分の縦幅*/
-  background: url(http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/9-3-5/img/steps.png)
-    no-repeat;
   animation: stepsline 2.5s 0.3s steps(3) forwards;
 }
 
 @keyframes stepsline {
   0% {
-    background-position: 0 0;
+    opacity: 1;
   }
 
   70% {
-    background-position: -300px 0;
-    /*アニメーション制作コマ数から1コマ分引いた横幅（今回は1フレーム100pxで制作しているので全体の400px-100px=300px⇒-300px）を指定。*/
     opacity: 1;
   }
 
   100% {
-    background-position: -300px 0;
     opacity: 1;
   }
 }
@@ -988,9 +980,31 @@ input {
   } 
 }
 
+.profile a {
+  color: #d5d37d;
+}
+
+
+.sanko a {
+  color: #d5d37d;
+}
   
 
+.home a {
+  color: #d5d37d;
+}
 
+.simulate2 a {
+  color: #d5d37d;
+}
+
+.literacy a {
+  color: #d5d37d;
+}
+
+.check a {
+  color: #d5d37d;
+}
 
 
 
